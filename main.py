@@ -55,7 +55,9 @@ class SocialMediaTrendAnalyzer:
     def perform_sentiment_analysis(self, data):
         # Sentiment analysis logic
         sentiment_analyzer = SentimentIntensityAnalyzer()
-        sentiment_results = pd.DataFrame(columns=["Post/Comment", "Sentiment Score"])  # create an empty DataFrame to store sentiment analysis results
+        # create an empty DataFrame to store sentiment analysis results
+        sentiment_results = pd.DataFrame(
+            columns=["Post/Comment", "Sentiment Score"])
         # Add actual logic to perform sentiment analysis on the collected social media data
         # sentiment_results = pd.DataFrame(..., columns=["Post/Comment", "Sentiment Score"])  # replace ... with actual sentiment analysis results
         return sentiment_results
